@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name ="viewport" content="width=divice-width, initial-escale=1,maximun-scale=1, user-scalable=no">
+
+<title>Ejemplo Bootstrap</title>
+<link data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	
+</head>
+<body>
+	
+	<h1 class="text-center fw-bold">Programacion Visual 2024</h1 >
+	<!-- <img src="../img/logoUnju.png" alt="" width="70" height="30"> -->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="../img/logoUnju.png" alt="" width="70" height="30"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggler="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="#">Accion 1</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="botton"
+							data-bs-toggle="dropdown" aria-expanded="false">Menu 1</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Accion 1</a></li>
+								<li><a class="dropdown-item" href="#">Accion 2</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="#">Accion 3</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link disabled">Accion 2</a>
+						</li>
+				</ul>
+				<ul class="navbar-nav ml-auto justify-contend-end">
+					<li class="nav-item"><a class="nav-link" href="#">Accion 3</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	</nav>
+	
+	<script type="text/javascript" data-th-src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
