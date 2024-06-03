@@ -12,7 +12,7 @@ public class CarreraController {
 		//vista formCarrera.html
 		ModelAndView modelView = new ModelAndView("formCarrera");
 		//agrega objeto
-		modelView.addObject(new Carrera());
+		modelView.addObject("nuevaCarrera",new Carrera());
 		return modelView;
 	}
 }

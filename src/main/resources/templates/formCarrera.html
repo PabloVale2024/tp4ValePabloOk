@@ -8,7 +8,26 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div class="container">
+	<h1>FORMULARIO CARRERA</h1>
+<form data-th-objet="${nuevaCarrera}">
+  <div class="col-sm-6">
+    <label for="codigo" class="form-label">Codigo</label>
+    <input type="text" class="form-control" 
+    	id="codigo">
+  </div>
+  <div class="col-sm-6">
+    <label for="nombre" class="form-label">Nombre Carrera</label>
+    <input type="text" class="form-control" id="nombre">
+  </div>
+  <div class="col-sm-6">
+    <label for="cantidad" class="form-label">Cantidad de Años</label>
+    <input type="number" class="form-control" id="cantidad">
+    
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar Carrera</button>
+</form>
+</div>
 <script type="text/javascript" data-th-src="@{/webjars/botstrap.bundle.min.js}"></script>
 </body>
 </html>
