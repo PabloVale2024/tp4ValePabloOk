@@ -5,9 +5,44 @@
     <title>Navbar</title>
 <link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">    
 </head>
-<body>
 
-<nav data-th-fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+<body>
+<nav data-th-fragment="navbar" class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid card">
+			<a class="navbar-brand" href="https://virtual.unju.edu.ar"><img src="../img/logoUnju.png" alt="" width="70" height="30"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggler="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse card-body" id="navbarSupportedContent" >
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" href="https://www.unju.edu.ar/oferta2024/unidades.html" target="_blank">Ofertas Academicas</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="botton"
+							data-bs-toggle="dropdown" aria-expanded="false">Facultades</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="https://www.fca.unju.edu.ar/" target="_blanck">Agrarias</a></li>
+								<li><a class="dropdown-item" href="https://www.fce.unju.edu.ar/" target="_blanck">Economia</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="https://escmi.unju.edu.ar/" target="_blanck">Escuela de Minas</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="formularioCarrera">Incribirse</a>
+						</li>
+				</ul>
+				<ul class="navbar-nav ml-auto justify-contend-end">
+					<li class="nav-item"><a class="nav-link" href="https://noticias.unju.edu.ar/" target="_blank">Noticias</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	</nav>
+	<hr>
+
+
+<!--<nav data-th-fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +77,7 @@
       </form>
     </div>
   </div>
-</nav>
+</nav>-->
 
 <footer data-th-fragment="footer">
 	<h1> PIE DE PAGINA </h1>
