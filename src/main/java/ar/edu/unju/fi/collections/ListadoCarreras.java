@@ -13,20 +13,21 @@ public class ListadoCarreras {
 			return carreras;
 		}
 		//Buscar carrrera por Id
-		public static Carrera buscarCarreraPorCodigo(String codigo) {
-			for (Carrera c: carreras) {
-				if (c.getCodigo().equals(codigo)) {
-					return c;
-				}
-			}
-			return null;
-		}
+		 public static Carrera buscarCarreraPorCodigo(String codigo) {
+			    for (Carrera c : carreras) {
+			      if (c.getCodigo().equals(codigo)) {
+			        return c;
+			      }
+			    }
+			    return null;
+			  }
 		//Agregar carrera
 		public static void agregarCarrera (Carrera c) {
 			//agregar estado
 			c.setEstado(true);
 			carreras.add(c);
 		}
+		
 		public static void modificarCarrera (Carrera carreraModificada) {
 			for (int i =0;i<carreras.size();i++) {
 				Carrera carrera=carreras.get(i);
